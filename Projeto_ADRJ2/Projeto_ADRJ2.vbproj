@@ -1,0 +1,250 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EAD44C6B-8207-4D0F-819B-A3114737FDCD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Projeto_ADRJ2.My.MyApplication</StartupObject>
+    <RootNamespace>Projeto_ADRJ2</RootNamespace>
+    <AssemblyName>Projeto_ADRJ2</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Projeto_ADRJ2.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Projeto_ADRJ2.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\cldBancoDados.vb" />
+    <Compile Include="Classes\cldDadosConexao.vb" />
+    <Compile Include="Classes\cldCategoria.vb" />
+    <Compile Include="Classes\cldCliente.vb" />
+    <Compile Include="Classes\cldDetalhaVenda.vb" />
+    <Compile Include="Classes\cldEscolaridade.vb" />
+    <Compile Include="Classes\cldEstadoCivil.vb" />
+    <Compile Include="Classes\cldFilial.vb" />
+    <Compile Include="Classes\cldFormaPagamento.vb" />
+    <Compile Include="Classes\cldFuncionario.vb" />
+    <Compile Include="Classes\clnFuncoesGerais1.vb" />
+    <Compile Include="Classes\DDD.vb" />
+    <Compile Include="Classes\Endereco.vb" />
+    <Compile Include="Form.vb\Form_cadastra_endereco.Designer.vb">
+      <DependentUpon>Form_cadastra_endereco.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form.vb\Form_cadastra_endereco.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form.vb\Form_alterar_senha.Designer.vb">
+      <DependentUpon>Form_alterar_senha.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form.vb\Form_alterar_senha.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form.vb\Form_detalha_venda.Designer.vb">
+      <DependentUpon>Form_detalha_venda.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form.vb\Form_detalha_venda.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_relacionado\Form_cadastra_fornecedor.Designer.vb">
+      <DependentUpon>Form_cadastra_fornecedor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_relacionado\Form_cadastra_fornecedor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_relacionado\Form_cadastra_produto.Designer.vb">
+      <DependentUpon>Form_cadastra_produto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_relacionado\Form_cadastra_produto.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_relacionado\Form_consulta_banco.Designer.vb">
+      <DependentUpon>Form_consulta_banco.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_relacionado\Form_consulta_banco.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_relacionado\Form_cadastro_filial.Designer.vb">
+      <DependentUpon>Form_cadastro_filial.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_relacionado\Form_cadastro_filial.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_relacionado\Form_cadastra_func.Designer.vb">
+      <DependentUpon>Form_cadastra_func.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_relacionado\Form_cadastra_func.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_relacionado\Form_cadastra_cliente.Designer.vb">
+      <DependentUpon>Form_cadastra_cliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form_relacionado\Form_cadastra_cliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form.vb\Form_principal.Designer.vb">
+      <DependentUpon>Form_principal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form.vb\Form_principal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form.vb\Form_login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form.vb\Form_login.Designer.vb">
+      <DependentUpon>Form_login.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Classes\Fornecedor.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Classes\Produto.vb" />
+    <Compile Include="Classes\Venda.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Form.vb\Form_cadastra_endereco.resx">
+      <DependentUpon>Form_cadastra_endereco.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form.vb\Form_alterar_senha.resx">
+      <DependentUpon>Form_alterar_senha.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form.vb\Form_detalha_venda.resx">
+      <DependentUpon>Form_detalha_venda.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_relacionado\Form_cadastra_fornecedor.resx">
+      <DependentUpon>Form_cadastra_fornecedor.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_relacionado\Form_cadastra_produto.resx">
+      <DependentUpon>Form_cadastra_produto.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_relacionado\Form_consulta_banco.resx">
+      <DependentUpon>Form_consulta_banco.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_relacionado\Form_cadastro_filial.resx">
+      <DependentUpon>Form_cadastro_filial.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_relacionado\Form_cadastra_cliente.resx">
+      <DependentUpon>Form_cadastra_cliente.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form.vb\Form_login.resx">
+      <DependentUpon>Form_login.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form.vb\Form_principal.resx">
+      <DependentUpon>Form_principal.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_relacionado\Form_cadastra_func.resx">
+      <DependentUpon>Form_cadastra_func.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Classes\ClassDiagram1.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\music.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
